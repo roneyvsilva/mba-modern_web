@@ -6,71 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <title>Cadastro de Usuários</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li>
-                    <p>Belo Horizonte, MG</p>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-file-person"></i></li>
+                </a>
+                <li id="localizacao"><i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">Belo Horizonte, MG</p>
                 </li>
                 <li><i class="bi bi-image"></i></li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <h1>Cadastro de Usuários</h1>
+    <section class="secao-input">
+        <h1 class="titulo-cadastro">Cadastro de Usuários</h1>
         <form action="">
-            <div>
-                <label for="">Nome:</label>
-                <input type="text">
-                <label for="">Email:</label>
-                <input type="email">
-                <label for="">Senha:</label>
-                <input type="password">
-                <label for="">Imagem:</label>
-                <input type="text">
-                <label for="">Endereço:</label>
-                <input type="text">
-                <label for="">Produtos favoritos:</label>
-                <input type="text">
-                <label for="">Pedidos:</label>
-                <input type="text">
-                <label for="">Administrador:</label>
-                <input type="radio" name="administrador">Sim
-                <input type="radio" name="administrador">Não
-                <button>Cadastrar Usuário</button>
+            <div class="input-campos">
+                <label class="label" for="">Nome:</label>
+                <input class="input" type="text">
+                <label class="label" for="">Email:</label>
+                <input class="input" type="email">
+                <label class="label" for="">Senha:</label>
+                <input class="input" type="password">
+                <label class="label" for="">Imagem:</label>
+                <input class="input" type="text">
+                <label class="label" for="">Endereço:</label>
+                <input class="input" type="text">
+                <label class="label" for="">Produtos favoritos:</label>
+                <input class="input" type="text">
+                <label class="label" for="">Pedidos:</label>
+                <input class="input" type="text">
+                <label class="label" for="">Administrador:</label>
+                <div class="radio">
+                    <input for="admin" id="admin" type="radio" name="admin">
+                    <label for="admin" id="admin">Sim</label>
+                    <input id="cliente" type="radio" name="admin">
+                    <label for="cliente" id="cliente">Não</label>
+                </div>
+                <button class="botao">CADASTRAR USUÁRIO</button>
             </div>
         </form>
     </section>
-
-    <footer>
-        <ul>
-            <li>
-                <a href=""><i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-cart3"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house"></i>
+                    <p class="footer-nome-item">Home</p>
+                </li>
+            </a>
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-person"></i>
+                    <p class="footer-nome-item">Cadastro Usuário</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-nome-item">Cadastro de Produtos</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-cart3"></i>
+                    <p class="footer-nome-item">Carrinho</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-stickies"></i>
+                    <p class="footer-nome-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
 </body>

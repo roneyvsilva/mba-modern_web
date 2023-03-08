@@ -6,57 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li>
-                    <p>Belo Horizonte, MG</p>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-file-person"></i></li>
+                </a>
+                <li id="localizacao"><i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">Belo Horizonte, MG</p>
                 </li>
                 <li><i class="bi bi-image"></i></li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <p>NOME DA EMPRESA</p>
-        <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="imagem da empresa">
-        <div>
-            <label for="">Login</label>
-            <input type="text">
-            <label for="">Senha</label>
-            <input type="password">
-            <button>ENTRAR</button>
+    <section id="mensagens-inicio">
+        <h1 id="nome-empresa">RONIM DELIVERY</h1>
+        <h2 class="mensagem">Olá, seja bem vindo!!!</h2>
+        <h2 class="mensagem">Faça seu login...</h2>
+    </section>
+    <section class="secao-input">
+        <img id="login-imagem" src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="imagem da empresa">
+        <div class="input-campos">
+            <label class="label" for="">Login</label>
+            <input class="input" type="text">
+            <label class="label" for="">Senha</label>
+            <input class="input" type="password">
+            <button id="login-button" class="botao">ENTRAR</button>
         </div>
     </section>
-
-    <footer>
-        <ul>
-            <li>
-                <a href=""><i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-cart3"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house"></i>
+                    <p class="footer-nome-item">Home</p>
+                </li>
+            </a>
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-person"></i>
+                    <p class="footer-nome-item">Cadastro Usuário</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-nome-item">Cadastro de Produtos</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-cart3"></i>
+                    <p class="footer-nome-item">Carrinho</p>
+                </li>
+            </a>
+            <a href="">
+                <li class="footer-item">
+                    <i class="bi bi-stickies"></i>
+                    <p class="footer-nome-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
 </body>

@@ -21,8 +21,9 @@ body {
 /* Estilização do HEADER - NAV */
 .cabecalho {
     width: 100%;
-    /* background-image: url(); */
-
+    background-image: url(https://blog-parceiros.ifood.com.br/wp-content/uploads/2022/02/delivery-1.webp);
+    background-position: center;
+    background-size: 100%;
 }
 
 /* .menu {
@@ -106,7 +107,6 @@ i.bi-search {
     padding-top: .2rem;
     padding-left: 4rem;
     font-size: 40px;
-
 }
 
 #input-text {
@@ -194,6 +194,7 @@ section#cards-produtos {
     display: block;
     width: 70%;
     margin: auto;
+    margin-top: .5rem;
     justify-content: center;
 }
 
@@ -363,4 +364,99 @@ i.bi-stickies {
     span#frase-avaliacao {
         display: none;
     }
+}
+
+/* Estilização padrão de componentes */
+
+.botao {
+    box-shadow: inset 0px 1px 0px 0px #d4fcc1;
+    background: linear-gradient(to bottom, var(--background-clean) 5%, var(--cor-da-empresa) 100%);
+    border-radius: 6px;
+    border: 1px solid var(--cor-da-empresa);
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 24px 12px 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px var(--cor-da-empresa);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.botao:hover {
+    background: linear-gradient(to bottom, var(--cor-da-empresa) 5%, var(--background-clean) 100%);
+}
+
+.botao:active {
+    position: relative;
+    top: 1px;
+}
+
+.label {
+    margin-left: 2.4rem;
+    font-size: 25px;
+    padding: .8rem 0 .8rem 0;
+    color: darkgreen;
+    font-weight: 700;
+}
+
+.input {
+    padding: 0.5rem;
+    margin: auto;
+    font-size: 25px;
+    width: 90%;
+    padding: .9rem 0 .9rem 0;
+    border: 2px solid var(--cor-da-empresa);
+    text-align: center;
+}
+
+.secao-input {
+    width: 60%;
+    margin: 2rem auto;
+    box-shadow: 0 6px 10px 0 var(--cor-da-empresa);
+    transition: 0.3s;
+}
+
+.secao-input img {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    margin: auto;
+    padding: .5rem;
+}
+
+.input-campos {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+}
+
+.titulo-cadastro {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#admin,
+#cliente {
+    font-size: 20px;
+    color: var(--cor-empresa);
+    text-shadow: 1px 1px black;
+    margin: auto;
+    padding: 1.1rem;
+    padding: .2rem;
+    margin: 0 5px;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
 }
