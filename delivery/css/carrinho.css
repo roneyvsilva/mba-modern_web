@@ -1,0 +1,143 @@
+.carrinho {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.carrinho a {
+    text-decoration: none;
+    color: black;
+}
+
+i.bi-chevron-double-left {
+    font-size: 70px;
+    padding-left: 1.5rem;
+}
+
+i.bi-cart-x {
+    font-size: 70px;
+    text-shadow: 2px 2px 2px black;
+    padding-right: 1.5rem;
+    color: red;
+}
+
+
+/* Estilizando os produtos no carrinho */
+.produtos-carrinho {
+    display: flex;
+    margin: auto;
+    background-color: var(--background-clean);
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px var(--cor-da-empresa);
+    margin-bottom: 2rem;
+}
+
+.div-carrinho {
+    display: flex;
+    align-content: center;
+}
+
+.img-carrinho,
+.dados-produto {
+    width: 40%;
+    margin: 1rem;
+}
+
+.dados-produto {
+    justify-content: center;
+}
+
+#nome-produto {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 0.2rem;
+    margin: 1rem;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px var(--cor-da-empresa);
+}
+
+.quantidade-produto {
+    display: flex;
+    justify-content: center;
+}
+
+i.bi-trash3 {
+    font-size: 40px;
+    padding-top: 1rem;
+    color: red;
+}
+
+i.bi-dash-square,
+i.bi-plus-square {
+    font-size: 25px;
+}
+
+.excluir-valor-unitario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.valor-unitario {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.num-qtde-produto {
+    font-size: 25px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/* Estilizando o cupom */
+.cupom {
+    display: flex;
+    justify-content: center;
+}
+
+#input-cupom {
+    width: 40%;
+    margin: 1rem;
+}
+
+#botao-aplicar {
+    margin: 1rem;
+    width: 10%;
+}
+
+/* Estilizando o pagamento */
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.botao-carrinho {
+    width: 20%;
+    padding: 1.5rem;
+    display: flex;
+}
+
+#botao-add-carrinho {
+    margin: auto;
+}
+
+.precos-poduto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precos {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px var(--cor-da-empresa);
+}
+
+.precos-valores {
+    font-size: 30px;
+}

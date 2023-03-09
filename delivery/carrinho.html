@@ -6,78 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <title>Carrinho</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li>
-                    <p>Belo Horizonte, MG</p>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-file-person"></i></li>
+                </a>
+                <li id="localizacao"><i class="bi bi-geo-alt"></i>
+                    <p class="nome-localizacao">Belo Horizonte, MG</p>
                 </li>
                 <li><i class="bi bi-image"></i></li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <i class="bi bi-chevron-double-left"></i>
-        <p>CARRINHO</p>
-        <i class="bi bi-cart-x"></i>
+    <section class="carrinho">
+        <a href="home.html"><i class="bi bi-chevron-double-left"></i></a>
+        <h1 id="nome-empresa">CARRINHO</h1>
+        <a href=""><i class="bi bi-cart-x"></i></a>
     </section>
-    <section>
-        <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="imagem do produto">
+    <section class="produtos-carrinho">
+        <div class="div-carrinho">
+            <img class="img-carrinho" src="https://cdn-icons-png.flaticon.com/512/857/857681.png"
+                alt="imagem do produto">
         </div>
-        <div>
-            <p>Nome do produto</p>
-            <div>
+        <div class="dados-produto">
+            <h1 id="nome-produto">Nome do produto</h1>
+            <div class="quantidade-produto">
                 <i class="bi bi-dash-square"></i>
-                <p>1</p>
+                <p class="num-qtde-produto">1</p>
                 <i class="bi bi-plus-square"></i>
             </div>
-            <div>
+            <div class="excluir-valor-unitario">
                 <i class="bi bi-trash3"></i>
-                <p>R$ 999,99</p>
+                <p class="valor-unitario">R$ 999,99</p>
             </div>
         </div>
     </section>
-    <section>
-        <input type="text" placeholder="Digite seu cupom aqui">
-        <button>Aplicar</button>
-    </section>
-    <section>
-        <div>
-            <p>Total</p>
-            <p>Delivery</p>
+    <section class="produtos-carrinho">
+        <div class="div-carrinho">
+            <img class="img-carrinho" src="https://cdn-icons-png.flaticon.com/512/857/857681.png"
+                alt="imagem do produto">
         </div>
-        <button>Ir para pagamento</button>
+        <div class="dados-produto">
+            <h1 id="nome-produto">Nome do produto</h1>
+            <div class="quantidade-produto">
+                <i class="bi bi-dash-square"></i>
+                <p class="num-qtde-produto">1</p>
+                <i class="bi bi-plus-square"></i>
+            </div>
+            <div class="excluir-valor-unitario">
+                <i class="bi bi-trash3"></i>
+                <p class="valor-unitario">R$ 999,99</p>
+            </div>
+        </div>
     </section>
-    <footer>
-        <ul>
-            <li>
-                <a href=""><i class="bi bi-house"></i>
-                    <p>Home</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-person"></i>
-                    <p>Perfil</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-receipt"></i>
-                    <p>Cupons</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-cart3"></i>
-                    <p>Pedidos</p>
-                </a>
-            </li>
+    <section class="cupom">
+        <input id="input-cupom" class="input" type="text" placeholder="Digite seu cupom aqui">
+        <button id="botao-aplicar" class="botao">APLICAR</button>
+    </section>
+    <section class="pagamento">
+        <div class="precos-poduto">
+            <p class="precos">Preço Total</p>
+            <p class="precos-valores">R$ 0000,00</p>
+            <p class="precos">Preço Delivery</p>
+            <p class="precos-valores">R$ 0000,00</p>
+        </div>
+        <div class="botao-carrinho">
+            <button id="botao-add-carrinho" class="botao">
+                <h1>REALIZAR PAGAMENTO</h1>
+            </button>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house"></i>
+                    <p class="footer-nome-item">Home</p>
+                </li>
+            </a>
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-person"></i>
+                    <p class="footer-nome-item">Cadastro Usuário</p>
+                </li>
+            </a>
+            <a href="cadastrar_produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-upc-scan"></i>
+                    <p class="footer-nome-item">Cadastro de Produtos</p>
+                </li>
+            </a>
+            <a href="carrinho.html">
+                <li class="footer-item">
+                    <i class="bi bi-cart3"></i>
+                    <p class="footer-nome-item">Carrinho</p>
+                </li>
+            </a>
+            <a href="produto.html">
+                <li class="footer-item">
+                    <i class="bi bi-stickies"></i>
+                    <p class="footer-nome-item">Produto</p>
+                </li>
+            </a>
         </ul>
     </footer>
 </body>

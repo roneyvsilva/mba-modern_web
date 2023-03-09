@@ -85,6 +85,7 @@ section#mensagens-inicio {
     font-size: 40px;
     margin-bottom: .5rem;
     color: var(--cor-da-empresa);
+    margin: auto;
 }
 
 .mensagem {
@@ -448,7 +449,7 @@ i.bi-stickies {
 #admin,
 #cliente {
     font-size: 20px;
-    color: var(--cor-empresa);
+    color: var(--cor-da-empresa);
     text-shadow: 1px 1px black;
     margin: auto;
     padding: 1.1rem;
