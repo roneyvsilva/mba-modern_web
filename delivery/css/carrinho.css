@@ -63,6 +63,8 @@ i.bi-cart-x {
 .quantidade-produto {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 i.bi-trash3 {
