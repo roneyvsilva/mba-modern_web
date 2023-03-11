@@ -26,27 +26,27 @@
     </header>
     <section class="secao-input">
         <h1 class="titulo-cadastro">Cadastro de Usuários</h1>
-        <form action="">
+        <form id="form-cad-usuarios" action="">
             <div class="input-campos">
-                <label class="label" for="">Nome:</label>
+                <label class="label" for="">Nome</label>
                 <input class="input" type="text">
-                <label class="label" for="">Email:</label>
+                <label class="label" for="">Email</label>
                 <input class="input" type="email">
-                <label class="label" for="">Senha:</label>
-                <input class="input" type="password">
-                <label class="label" for="">Imagem:</label>
+                <label class="label" for="">Senha</label>
+                <input id="senha" class="input" type="password">
+                <label class="label" for="">Imagem</label>
                 <input class="input" type="text">
-                <label class="label" for="">Endereço:</label>
+                <label class="label" for="">Endereço</label>
                 <input class="input" type="text">
-                <label class="label" for="">Produtos favoritos:</label>
+                <label class="label" for="">Produtos favoritos</label>
                 <input class="input" type="text">
-                <label class="label" for="">Pedidos:</label>
+                <label class="label" for="">Pedidos</label>
                 <input class="input" type="text">
-                <label class="label" for="">Administrador:</label>
+                <label class="label" for="">Administrador</label>
                 <div class="radio">
                     <input for="admin" id="admin" type="radio" name="admin">
                     <label for="admin" id="admin">Sim</label>
-                    <input id="cliente" type="radio" name="admin">
+                    <input id="cliente" type="radio" name="admin" checked>
                     <label for="cliente" id="cliente">Não</label>
                 </div>
                 <button class="botao">CADASTRAR USUÁRIO</button>
@@ -87,6 +87,7 @@
             </a>
         </ul>
     </footer>
+    <script src="./js/script-cadastrar-usuario.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
-i.bi-heart {
+i#coracao {
     font-size: 70px;
     text-shadow: 2px 2px 2px black;
     color: var(--cor-empresa);
     padding-right: 1.5rem;
     color: red;
+    margin: auto;
 }
 
 .produto {

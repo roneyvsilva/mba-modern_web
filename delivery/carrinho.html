@@ -28,7 +28,7 @@
     <section class="carrinho">
         <a href="home.html"><i class="bi bi-chevron-double-left"></i></a>
         <h1 id="nome-empresa">CARRINHO</h1>
-        <a href=""><i class="bi bi-cart-x"></i></a>
+        <i id="excluir-carrinho" class="bi bi-cart-x"></i>
     </section>
     <section class="produtos-carrinho">
         <div class="div-carrinho">
@@ -44,7 +44,7 @@
             </div>
             <div class="excluir-valor-unitario">
                 <i class="bi bi-trash3"></i>
-                <p class="valor-unitario">R$ 999,99</p>
+                <p class="valor-unitario">R$ 99,90</p>
             </div>
         </div>
     </section>
@@ -57,12 +57,12 @@
             <h1 id="nome-produto">Nome do produto</h1>
             <div class="quantidade-produto">
                 <i class="bi bi-dash-square"></i>
-                <p class="num-qtde-produto">1</p>
+                <p class="num-qtde-produto">2</p>
                 <i class="bi bi-plus-square"></i>
             </div>
             <div class="excluir-valor-unitario">
                 <i class="bi bi-trash3"></i>
-                <p class="valor-unitario">R$ 999,99</p>
+                <p class="valor-unitario">R$ 149,90</p>
             </div>
         </div>
     </section>
@@ -73,9 +73,9 @@
     <section class="pagamento">
         <div class="precos-poduto">
             <p class="precos">Preço Total</p>
-            <p class="precos-valores">R$ 0000,00</p>
+            <p id="preco-total" class="precos-valores">R$ 0000,00</p>
             <p class="precos">Preço Delivery</p>
-            <p class="precos-valores">R$ 0000,00</p>
+            <p id="preco-delivery" class="precos-valores">R$ 0000,00</p>
         </div>
         <div class="botao-carrinho">
             <button id="botao-add-carrinho" class="botao">
@@ -117,6 +117,7 @@
             </a>
         </ul>
     </footer>
+    <script src="./js/script-carrinho.js"></script>
 </body>
 
 </html>

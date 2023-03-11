@@ -463,3 +463,12 @@ i.bi-stickies {
     display: flex;
     justify-content: center;
 }
+
+/* Estilização da mensagem ao usuário */
+.div-mensagem {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.5rem;
+}
